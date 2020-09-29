@@ -1,0 +1,7 @@
+C:\Users\joel_\source\repos\TjuvOchPolis\obj\Debug\TjuvOchPolis.csproj.CoreCompileInputs.cache
+C:\Users\joel_\source\repos\TjuvOchPolis\bin\Debug\TjuvOchPolis.exe.config
+C:\Users\joel_\source\repos\TjuvOchPolis\bin\Debug\TjuvOchPolis.exe
+C:\Users\joel_\source\repos\TjuvOchPolis\bin\Debug\TjuvOchPolis.pdb
+C:\Users\joel_\source\repos\TjuvOchPolis\obj\Debug\TjuvOchPolis.exe
+C:\Users\joel_\source\repos\TjuvOchPolis\obj\Debug\TjuvOchPolis.pdb
+C:\Users\joel_\source\repos\TjuvOchPolis\obj\Debug\TjuvOchPolis.csprojAssemblyReference.cache
