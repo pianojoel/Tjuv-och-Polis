@@ -12,9 +12,9 @@ namespace TjuvOchPolis
         static void Main(string[] args)
         {
             //Initialize 
-            int numberOfCitizens = 20;
-            int numberOfThieves = 5;
-            int numberOfPolice = 30;
+            int numberOfCitizens = 10;
+            int numberOfThieves = 10;
+            int numberOfPolice = 5;
             Console.SetWindowSize(130, 40);
             Console.BackgroundColor = ConsoleColor.White;
             var rnd = new Random();
@@ -29,8 +29,8 @@ namespace TjuvOchPolis
             {
                 do
                 {
-                    x = rnd.Next(0, 100);
-                    y = rnd.Next(0, 25);
+                    x = rnd.Next(1, 100);
+                    y = rnd.Next(1, 25);
 
                 }
                 while ((citizens.Any(person => person.X == x && person.Y == y)) || (thieves.Any(thief => thief.X == x && thief.Y == y)) || (policemen.Any(police => police.X == x && police.Y == y)));
@@ -44,8 +44,8 @@ namespace TjuvOchPolis
             
                 do
                 {
-                    x = rnd.Next(0, 100);
-                    y = rnd.Next(0, 25);
+                    x = rnd.Next(1, 100);
+                    y = rnd.Next(1, 25);
 
                 }
                 while ((citizens.Any(person => person.X == x && person.Y == y)) || (thieves.Any(thief => thief.X == x && thief.Y == y)) || (policemen.Any(police => police.X == x && police.Y == y)));
@@ -56,8 +56,8 @@ namespace TjuvOchPolis
             {
                 do
                 {
-                    x = rnd.Next(0, 100);
-                    y = rnd.Next(0, 25);
+                    x = rnd.Next(1, 100);
+                    y = rnd.Next(1, 25);
                     
                 }
                 while ((citizens.Any(person => person.X == x && person.Y == y)) || (thieves.Any(thief => thief.X == x && thief.Y == y)) || (policemen.Any(police => police.X == x && police.Y == y)));
@@ -70,6 +70,22 @@ namespace TjuvOchPolis
                 
             
             Console.Clear();
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write("-");
+            }
+            for (int i = 1; i < 25; i++)
+            {
+                Console.SetCursorPosition(0, i);
+                Console.Write("|");
+                Console.SetCursorPosition(100, i);
+                Console.Write("|");
+            }
+            Console.SetCursorPosition(0, 25);
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write("-");
+            }
             //Play Game
             do
             {
@@ -282,21 +298,21 @@ namespace TjuvOchPolis
             {
             X += Xdir;
             Y += Ydir;
-            if (X < 0)
+            if (X < 1)
             {
-                X = 100;
+                X = 99;
             }
-            if (X > 100)
+            if (X > 99)
             {
-                X = 0;
+                X = 1;
             }
-            if (Y > 25)
+            if (Y > 24)
             {
-                Y = 0;
+                Y = 1;
             }
-            if (Y < 0)
+            if (Y < 1)
             {
-                Y = 25;
+                Y = 24;
             }
 
         }
